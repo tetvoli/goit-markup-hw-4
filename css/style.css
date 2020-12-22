@@ -182,17 +182,23 @@ h1 {
 }
 .details {
   display: flex;
+  padding: 0;
+  list-style: none;
 }
 .theme {
   width: 270px;
+  margin: 10px;
+  padding: 10px;
+  display: block;
 }
+
 .theme + .theme {
   margin-left: 30px;
 }
 
 .theme::before {
-  display: block;
   content: "";
+  display: block;
   height: 120p;
   outline: 1px solid red;
 }
@@ -302,6 +308,41 @@ h1 {
   letter-spacing: 0.03em;
   color: var(--text-secondary-color);
 }
+
+/*Постоянные клиенты*/
+.clients {
+  font-family: Roboto;
+  background-color: var(--background-main-color);
+}
+.clients h2 {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+  color: var(--text-main-color);
+  text-align: center;
+  padding-top: 94px;
+  padding-bottom: 50px;
+}
+.clients-cards {
+  display: inline-flex;
+  padding-bottom: 94px;
+}
+.clients-cards button {
+  display: block;
+  width: 170px;
+  height: 90px;
+  border-radius: 1px solid #afb1b8;
+  margin-left: 30px;
+}
+.clients-cards button:nth-last-child {
+  margin-left: 0;
+}
+.clients-cards button logo1 {
+  background-image: url(../images/logo\ 1.svg);
+  background-size: contain;
+}
+
 /*Footer*/
 footer {
   background-color: var(--background-head-color);
