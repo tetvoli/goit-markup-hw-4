@@ -199,8 +199,9 @@ h1 {
 .theme::before {
   content: "";
   display: block;
-  height: 120p;
-  outline: 1px solid red;
+  height: 120px;
+  background-image: url(../images/icons/clock.svg);
+  background-repeat: no-repeat;
 }
 
 .feature h2 {
@@ -310,7 +311,7 @@ h1 {
 }
 
 /*Постоянные клиенты*/
-.clients {
+/*.clients {
   font-family: Roboto;
   background-color: var(--background-main-color);
 }
@@ -328,21 +329,45 @@ h1 {
   display: inline-flex;
   padding-bottom: 94px;
 }
-.clients-cards button {
+.clients-cards .clients-link {
   display: block;
   width: 170px;
   height: 90px;
   border-radius: 1px solid #afb1b8;
   margin-left: 30px;
 }
-.clients-cards button:nth-last-child {
+.clients-cards .clients-link:nth-last-child {
   margin-left: 0;
 }
-.clients-cards button logo1 {
-  background-image: url(../images/logo\ 1.svg);
-  background-size: contain;
+.clients-link {
+  outline: 1px solid red;
+}
+*/
+.clients {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  padding-bottom: 94px;
 }
 
+.clients-item a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 170px;
+  height: 90px;
+  border: 1px solid var(--icons-primary-color);
+  border-radius: 4px;
+}
+
+.clients-item {
+  margin-right: 30px;
+  fill: var(--icons-primary-color);
+}
+
+.clients-item:last-child {
+  margin-right: 0;
+}
 /*Footer*/
 footer {
   background-color: var(--background-head-color);
